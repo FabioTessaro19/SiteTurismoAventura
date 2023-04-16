@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+html, h1, h2, h3, h4, h5, h6, a{
+    font-family: "arial";
+}
+
+.btn-populares, button{
+    display: inline-block;
+    padding: .9em 2.5em;
+    background: #2f3632;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.cabecalho-menu{
+    text-align: center;
+    height: 60px;
+    background: #35c973;
+    position: relative;
+    width: 100%;
+    
+    font: bold;
+}
+
+.menu-opcoes{
+    position: absolute;
+    top: 0;
+    left: 450px;
+   
+    height: 100%;
+    text-align: center;
+}
+.menu-opcoes ul{
+    margin: 5px 0px 0 0px;
+    padding: 0;
+ 
+}
+
+.menu-opcoes li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    padding: 15px;
+}
+
+.menu-opcoes a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+ 
+}
+.menu-opcoes a:hover{
+    background: #ccf0df;
+}
+
+.logotipo{
+    margin: 5px 0 0 135px;
+}
+
+.imagem-principal{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.fundo-principal{
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+.banner-principal{
+    text-align: center;
+    height: 100%;
+    background: #ffffff;
+    position: relative;
+    width: 100%;
+    font: bold;
+}
+
+
+.conteudo-popular-principal{
+    color: #000000;
+    padding: 0 0px 0px 0px;
+    overflow: auto;
+    width: 100%;
+}
+.popular1de4{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+   display: block;
+
+}
+
+.imagens-pop{
+    width: 500px;
+}
+
+p{
+    font: bold;
+}
+
+h1{
+    text-align: center;
+}
+
+.rodape{
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 50px;
+}
+
+
+
+
