@@ -4,114 +4,153 @@ html, h1, h2, h3, h4, h5, h6, a{
     font-family: "arial";
 }
 
+body{
+    background-color: #333;
+    color: white    ;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
 .btn-populares, button{
     display: inline-block;
     padding: .9em 2.5em;
-    background: #2f3632;
+    background: #04AA6D;
     border-radius: 5px;
     color: white;
     text-decoration: none;
-}
-
-.cabecalho-menu{
-    text-align: center;
-    height: 60px;
-    background: #35c973;
-    position: relative;
-    width: 100%;
-    
     font: bold;
 }
 
-.menu-opcoes{
-    position: absolute;
-    top: 0;
-    left: 450px;
-   
-    height: 100%;
+
+/* ESTILO DO MENU DE OPCOES */
+.menutop {
+    background-color: #333;
+    overflow: hidden;
+    
+  }
+  
+  .menutop a {
+    float: left;
+    color: #f2f2f2;
     text-align: center;
-}
-.menu-opcoes ul{
-    margin: 5px 0px 0 0px;
-    padding: 0;
- 
-}
-
-.menu-opcoes li{
-    list-style: none;
-    display: inline-block;
-    margin: 0px 0px 0px 0px;
-    padding: 15px;
-}
-
-.menu-opcoes a{
-    color: #000000;
+    padding: 18px 16px;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 5px;
-    text-align: center;
+    font-size: 17px;
+  
+  }
+  
+  
+  .menutop a:hover {
+    background-color: #ddd;
+    color: black;
+    
+  }
+  
  
-}
-.menu-opcoes a:hover{
-    background: #ccf0df;
-}
+  .menutop a.ativo {
+    background-color: #04AA6D;
+    color: white;
+    
+  }
+  /* FIM DO ESTILO DO MENU DE OPCOES */
+  
+  /* ESTILO DO SLIDER DE IMAGEM BANNER */
 
-.logotipo{
-    margin: 5px 0 0 135px;
-}
-
+  
 .imagem-principal{
     width: 100%;
-    height: 650px;
+    height: 545px;
     overflow: hidden;
 }
 
 .fundo-principal{
-    border: 1px solid rgb(0, 0, 0);
+   
     width: 100%;
 }
+
+/* FIM DO ESTILO DO SLIDER DE IMAGEM BANNER */
 
 .banner-principal{
     text-align: center;
     height: 100%;
-    background: #ffffff;
-    position: relative;
     width: 100%;
     font: bold;
+    overflow: hidden;
 }
 
 
-.conteudo-popular-principal{
-    color: #000000;
-    padding: 0 0px 0px 0px;
-    overflow: auto;
+.footer{
+    background-color:#333;
+    padding: 50px 100px;
+    color: white;
+    font-size: 14px;
+    
+}
+
+.footer__links li{
+    list-style: none;
+}
+.footer__links a{
+    color: white;
+    display: block;
+    font-weight: 600;
+    text-decoration:none;
+}
+
+.footer_cont li{
+    color: white;
+    display: block;
+    font-weight: 600;
+    text-decoration:none;
+}
+
+
+.linhas{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+    margin: 40px 0px 40px 40px; 
+}
+
+.linhas .esquerda{
+    overflow: hidden;
+}
+
+.linhas .esquerda img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.popular1de4{
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-   display: block;
+
+.linhas .direita .conteudo{
+    padding-left: 20px;
+}
+
+.linhas .direita .conteudo p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 15px;
 
 }
 
-.imagens-pop{
-    width: 500px;
+@media screen and (max-width: 768px){
+    .linhas{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .footer .container{
+        display:flex;
+    }
+    .footer .container > * {
+        margin: 1.5em;
+    }
+    
 }
 
-p{
-    font: bold;
-}
-
-h1{
-    text-align: center;
-}
-
-.rodape{
-    border: 1px solid rgb(0, 0, 0);
-    margin-top: 50px;
-}
 
 
 
