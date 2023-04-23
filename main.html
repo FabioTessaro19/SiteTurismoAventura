@@ -13,11 +13,11 @@
 </head>
 <body>
     <header class="menutop">
-        <a class="ativo" href="#pagina-inicial">Home</a>
+        <a class="ativo" href="main.html">Home</a>
         <a href="cidadeUm.html" target="_self">Caxias do Sul</a>
-        <a href="#gramado">Gramado</a>
-        <a href="#bento-goncalves">Bento Gonçalves</a>
-        <a href="#bento-goncalves">Outras cidades</a>
+        <a href="cidadeDois.html">Gramado</a>
+        <a href="cidadeTres.html">Bento Gonçalves</a>
+        <a href="outrasCidades.html">Outras cidades</a>
       </header>
 
 
@@ -27,20 +27,21 @@
 
       <div class="banner-principal">
         <h1>Encontre aqui a sua aventura!</h1>
-        <button type="button">Iniciar</button>
+            <a href="#comecar-aventura">
+               <button>Iniciar</button>
+            </a>
+        <h1 id="comecar-aventura">As aventuras mais populares na região da serra gaúcha...</h1>
     </div>
-
+   
     <section class="conteudo-popular-principal">
-        <h1>As aventuras mais populares na região da serra gaúcha...</h1>
-
-            
+       
                 <div class="linhas">
                     <div class="esquerda">
                         <img class="imagens-pop" src="imagens/ninhoaguia.png" alt="populares"> 
                     </div>
                     <div class="direita">
                         <div class="conteudo">
-                            <p>Ninho das águias</p>
+                            <h3>Ninho das águias</h3>
                             <p>Em Nova Petrópolis, O ninho das Águias proporciona o Paraglider. 
                                 trata-se de um mirante com mais de 500 metros de altura, com vista para a Serra Gaúcha e
                                 o Vale do Caí. A aventura fica garantida pela prática de paraglider e asa delta, já que 
@@ -56,7 +57,7 @@
                     </div>
                     <div class="direita">
                         <div class="conteudo">
-                                <p>Parque Nacional Aparados da Serra</p>
+                                <h3>Parque Nacional Aparados da Serra</h3>
                                 <p>Este lugar é perfeito para trilhas, e possui diversas opções, além de proporcionar belas paisagens. 
                                 </p>        
                                 <button class="btn-populares" type="button">Conhecer mais...</button>    
@@ -70,7 +71,7 @@
                     </div>
                     <div class="direita">  
                          <div class="conteudo">
-                            <p>Nelbosque</p>
+                            <h3>Nelbosque</h3>
                             <p>Em Caxias do sul, proporciona um ambiente para paintball e diversas atrações para escalada rapel e tirolesa.</p>       
                             <button class="btn-populares" type="button">Conhecer mais...</button>
                         </div>
@@ -84,7 +85,7 @@
                      </div>
                      <div class="direita">
                           <div class="conteudo"> 
-                                <p>Skyglass</p>
+                                <h3>Skyglass</h3>
                                 <p>Em canela. Basicamente o Skyglass é uma plataforma feita de aço e vidro,
                                     que proporciona uma visão incrível do vale. Junto do Skyglass, existe o "Abusado" que 
                                     consiste em um monotrilho com cadeiras suspensas que proporciona um passeio a 360 metros 
@@ -97,22 +98,37 @@
             
     </section>
 
+    <hr class="solid">
+
     <footer class="footer">
         <div class="container">
-            <h2>TURISMO DE AVENTURA</h2>
-
-          <ul class="footer__links">
-            <li><a href="main.html">Home</a></li>
-            <li><a href="#">Caxias do Sul</a></li>
-            <li><a href="#">Gramado</a></li>
-            <li><a href="#">Bento</a></li>
-            <li><a href="#">Outras cidades</a></li>
-          </ul>
-          <ul class="footer_cont">
-            <li>CONTATOS</li> 
-            <li>Telefone: 5555-5555</li> 
-            <li>Email: lllll@lllll</li> 
-          </ul>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Nosso Site</h4>
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="cidadeUm.html">Caxias do Sul</a></li>
+                        <li><a href="cidadeDois.html">Gramado</a></li>
+                        <li><a href="cidadeTres.html">Bento Gonçalves</a></li>
+                        <li><a href="outrasCidades.html">Outras Cidades</a></li>
+                    </ul>
+                </div>    
+                <div class="footer-col">
+                    <h4>Nosso Contato</h4>
+                    <ul>
+                        <li><a href="#">Email: fulano@gmail.com</a></li>
+                        <li><a href="#">Telefone: 54 3232-3232</a></li>
+                    </ul>
+                </div> 
+                <div class="footer-col">
+                    <h4>Nos Acompanhe</h4>
+                    <div class="social-links">
+                        <a href="https://www.ftec.com.br/" target="_blank">
+                            <img class="logo-ftec" src="imagens/ftec-social.png">
+                        </a>
+                    </div >
+                </div> 
+          </div>
         </div>
     </footer>
 
